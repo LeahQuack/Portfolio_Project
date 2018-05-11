@@ -3,7 +3,7 @@
 
 /*Page Layout Feelz*/
 html {
-	background-color: rgb(167, 85, 136, 0.5);
+	background-color: rgba(167, 85, 136, 0.5);
 	opacity: 0.9;
 }
 
@@ -51,6 +51,10 @@ h1 {
 	font-family: "Playfair Display", serif;
 }
 
+h1.name {
+	margin-bottom: 0;
+}
+
 h2 {
 	font-size: 2vw;
 }
@@ -63,11 +67,15 @@ p {
 	margin: 20px;
 }
 
+p.title {
+	margin-top: 0;
+}
+
 h2,
 h3,
 p {
 	font-family: "Montseratt", sans-serif;
-	font-weight: 170;
+	font-weight: 100;
 }
 
 .aboutme {
@@ -89,9 +97,8 @@ img {
 
 /*Branding pallet on the left*/
 .palette {
-	content-align: center;
-	float: left;
-	width: 20%;
+	margin: auto;
+	width: 10%;
 	text-align: center;
 	margin-top: 40px;
 }
@@ -153,6 +160,7 @@ hr:after {
 	width: 18%;
 	padding: 5px 10px;
 	margin-top: 7px;
+	margin-right: 14px;
 	color: white;
 	margin-bottom: 20px;
 }
@@ -215,10 +223,11 @@ footer {
 		margin-right: auto;
 	}
 
-	.main, .facts, .logo  {
+	.main, .facts, .logo, header  {
     width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 	}
 }
 
@@ -253,4 +262,3 @@ footer {
 	background: #007bb5;
 	color: white;
 }
-
