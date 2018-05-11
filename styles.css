@@ -1,0 +1,256 @@
+/*Google Font API For Playfair Display*/
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+
+/*Page Layout Feelz*/
+html {
+	background-color: rgb(167, 85, 136, 0.5);
+	opacity: 0.9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
+header {
+	border-radius: 6px 6px 0 0;
+	text-align: right;
+	padding: 15px;
+}
+
+#wrapper,
+header,
+footer {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+}
+
+/*Box Shadows So I Dont Repeat Myself*/
+#wrapper,
+.fa,
+.work,
+.facts,
+.box,
+hr,
+img,
+header,
+footer {
+	box-shadow: 10px 10px 5px grey;
+}
+
+/*Text specifics*/
+h1 {
+	font-size: 4vw;
+	font-family: "Playfair Display", serif;
+}
+
+h2 {
+	font-size: 2vw;
+}
+
+h3 {
+	color: #452d5f;
+}
+
+p {
+	margin: 20px;
+}
+
+h2,
+h3,
+p {
+	font-family: "Montseratt", sans-serif;
+	font-weight: 170;
+}
+
+.aboutme {
+	text-indent: 20px;
+}
+
+/*Images & logo*/
+.logo {
+	float: left;
+	width: 15%;
+	height: auto;
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+/*Branding pallet on the left*/
+.palette {
+	content-align: center;
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.box {
+	width: 80px;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.darkpurple {
+	background: #452d5f;
+}
+
+.lightpurple {
+	background: #a75588;
+}
+
+.pink {
+	background: #dc597d;
+}
+
+.darkpurple,
+.lightpurple,
+.pink {
+	padding: 10px 0;
+}
+
+.hexnum {
+}
+
+/*Middle content*/
+.main {
+	float: left;
+	width: 60%;
+	padding: 0 20px;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+/*HR Style Credit: Ibrahim Jabbari via CodePen*/
+hr {
+	border-top: 1px solid #a75588;
+	border-bottom: 1px solid #dc597d;
+}
+
+hr:after {
+	content: '';
+	display: block;
+	margin-top: 2px;
+	border-top: 1px solid #a75588;
+	border-bottom: 1px solid #dc597d;
+}
+
+/*Column all the way to the right*/
+.facts {
+	background-color: #dc597d;
+	width: 18%;
+	padding: 5px 10px;
+	margin-top: 7px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+/*Border Style*/
+.box,
+img,
+hr,
+.facts {
+	border-radius: 6px;
+}
+
+/*Footer*/
+
+footer {
+	border-radius: 0 0 6px 6px;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.work {
+	color: #fff;
+	background: #dc597d;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Responsive Code*/
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  
+	p {
+	font-size: 18px;
+	}
+  
+  .facts {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+	h1 {
+	font-size: 7vw;
+	}
+
+	h2 {
+	font-size: 5vw;
+	}
+
+	.palette {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main, .facts, .logo  {
+    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+
+
+/*Social Media Buttons via w3schools site*/
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
