@@ -19,11 +19,9 @@ html {
 
 header {
 	border-radius: 6px 6px 0 0;
-	text-align: right;
 	padding: 15px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 
 #wrapper,
@@ -55,7 +53,7 @@ h1 {
 }
 
 h1.name {
-	margin-bottom: 0;
+	margin: 0 auto;
 	order: 2;
 	padding-left: 10px;
 }
@@ -73,9 +71,7 @@ p {
 }
 
 p.title {
-	margin-left: auto;
-	margin-right: auto;
-	order: 3;
+	margin: auto;
 }
 
 h2,
@@ -94,7 +90,6 @@ p {
 	order: 1;
 	max-width: 100px;
 	max-height: 100px;
-	margin: 10px 0 0 150px;
 }
 
 img {
@@ -139,7 +134,7 @@ img {
 
 /*Middle content*/
 .main {
-	float: left;
+
 	width: 60%;
 	padding: 0 20px;
 	overflow: hidden;
@@ -196,24 +191,25 @@ footer {
 	color: #fff;
 	background: #dc597d;
 	width: 80%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*Responsive Code*/
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
-	.main {
-  	width: 80%;
-	padding: 0;
+  .main {
+    width: 80%;
+    padding: 0;
   }
   
 	p {
 	font-size: 18px;
 	}
   
-	.facts {
-  	width: 100%;
+  .facts {
+    width: 100%;
   }
 }
 
@@ -232,8 +228,8 @@ footer {
 		margin-right: auto;
 	}
 
-	.main, .facts, .logo, header  {
-	width: 100%;
+	.main, .facts, .logo, header {
+    width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -271,3 +267,4 @@ footer {
 	background: #007bb5;
 	color: white;
 }
+
