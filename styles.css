@@ -21,6 +21,9 @@ header {
 	border-radius: 6px 6px 0 0;
 	text-align: right;
 	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 #wrapper,
@@ -53,6 +56,8 @@ h1 {
 
 h1.name {
 	margin-bottom: 0;
+	order: 2;
+	padding-left: 10px;
 }
 
 h2 {
@@ -68,7 +73,8 @@ p {
 }
 
 p.title {
-	margin-top: 0;
+	margin-top: 0 50px 0 auto;
+	order: 3;
 }
 
 h2,
@@ -84,11 +90,10 @@ p {
 
 /*Images & logo*/
 .logo {
-	float: left;
-	width: 15%;
-	height: auto;
-	margin-left: 150px;
-	margin-top: 10px;
+	order: 1;
+	max-width: 100px;
+	max-height: 100px;
+	margin: 10px 0 0 150px;
 }
 
 img {
@@ -154,6 +159,10 @@ hr:after {
 	border-bottom: 1px solid #dc597d;
 }
 
+hr.bottom {
+	margin-bottom: 20px;
+}
+
 /*Column all the way to the right*/
 .facts {
 	background-color: #dc597d;
@@ -186,25 +195,24 @@ footer {
 	color: #fff;
 	background: #dc597d;
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 /*Responsive Code*/
 
 @media only screen and (max-width: 800px) {
   /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
+	.main {
+  	width: 80%;
+	padding: 0;
   }
   
 	p {
 	font-size: 18px;
 	}
   
-  .facts {
-    width: 100%;
+	.facts {
+  	width: 100%;
   }
 }
 
@@ -224,7 +232,7 @@ footer {
 	}
 
 	.main, .facts, .logo, header  {
-    width: 100%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
